@@ -26,14 +26,13 @@ func main() {
 					ListBox{
 						AssignTo: &MainWin.MainListbox,
 						Model:    MainWin.MainListbox.Model,
-						OnCurrentIndexChanged: func() {
-							MainWin.MainScrollView.SetModel(MainWin.MainListbox.Model)
-						},
 					},
 					ScrollView{
 						AssignTo: &MainWin.MainScrollView,
 						Layout:   VBox{},
-
-			}
+					},
+				},
+			},
+		},
 	}.Run()
 }
